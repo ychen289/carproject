@@ -12,7 +12,7 @@ export default async function Home() {
       <div className="mt-12 padding-x padding-y max-width" id="discover">
         <div className="home__text-container">
           <h1 className="text-4xl font-extrabold">Car Catalog</h1>
-          <p>Eplore the cars you might like</p>
+          <p>Explore the cars you might like</p>
         </div>
 
         <div className="home__filters">
@@ -33,10 +33,10 @@ export default async function Home() {
           </section>
         ) : (
           <div className="home__error-container">
-            <h2 className="text-black text-x font-bold">
+            <h2 className="text-black text-xl font-bold">
               Oops no cars were found in the result
             </h2>
-            <p>{allCars.message}</p>
+            <p>{allCars?.message}</p>
           </div>
         )}
       </div>
